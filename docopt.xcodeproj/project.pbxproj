@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		188A8284BD225A95386F83EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188A81B9E756AFFBE535000F /* Foundation.framework */; };
 		188A8C6CCAB8F4094C275428 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 188A870C9BA43CD2D2CD49B9 /* main.m */; };
+		5DD7E60F16FB65E70025E88D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD7E60E16FB65E70025E88D /* SenTestingKit.framework */; };
+		5DD7E61116FB65E70025E88D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD7E61016FB65E70025E88D /* Cocoa.framework */; };
+		5DD7E61B16FB65E70025E88D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5DD7E61916FB65E70025E88D /* InfoPlist.strings */; };
+		5DD7E61E16FB65E70025E88D /* DocoptTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD7E61D16FB65E70025E88D /* DocoptTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +33,17 @@
 		188A870C9BA43CD2D2CD49B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		188A872ECB2980CD87AD8A1E /* docopt */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = docopt; sourceTree = BUILT_PRODUCTS_DIR; };
 		188A88CB47029D582FFDE897 /* docopt.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = docopt.1; sourceTree = "<group>"; };
+		5DD7E60D16FB65E70025E88D /* DocoptTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DocoptTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DD7E60E16FB65E70025E88D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		5DD7E61016FB65E70025E88D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		5DD7E61316FB65E70025E88D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		5DD7E61416FB65E70025E88D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5DD7E61516FB65E70025E88D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5DD7E61816FB65E70025E88D /* DocoptTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DocoptTests-Info.plist"; sourceTree = "<group>"; };
+		5DD7E61A16FB65E70025E88D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5DD7E61C16FB65E70025E88D /* DocoptTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocoptTests.h; sourceTree = "<group>"; };
+		5DD7E61D16FB65E70025E88D /* DocoptTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocoptTests.m; sourceTree = "<group>"; };
+		5DD7E61F16FB65E70025E88D /* DocoptTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DocoptTests-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +52,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				188A8284BD225A95386F83EB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DD7E60916FB65E70025E88D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DD7E60F16FB65E70025E88D /* SenTestingKit.framework in Frameworks */,
+				5DD7E61116FB65E70025E88D /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +81,9 @@
 			isa = PBXGroup;
 			children = (
 				188A81B9E756AFFBE535000F /* Foundation.framework */,
+				5DD7E60E16FB65E70025E88D /* SenTestingKit.framework */,
+				5DD7E61016FB65E70025E88D /* Cocoa.framework */,
+				5DD7E61216FB65E70025E88D /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -64,6 +91,7 @@
 		188A83272E0253B219D8C9B0 = {
 			isa = PBXGroup;
 			children = (
+				5DD7E61616FB65E70025E88D /* DocoptTests */,
 				188A87F0B30A93562362143C /* Products */,
 				188A82ACB5DAB0897D952DFB /* Frameworks */,
 				188A82079A89CB9D0BDECD4A /* docopt */,
@@ -74,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				188A872ECB2980CD87AD8A1E /* docopt */,
+				5DD7E60D16FB65E70025E88D /* DocoptTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,6 +111,36 @@
 			isa = PBXGroup;
 			children = (
 				188A803AFE614DBA882F594B /* docopt-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5DD7E61216FB65E70025E88D /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DD7E61316FB65E70025E88D /* AppKit.framework */,
+				5DD7E61416FB65E70025E88D /* CoreData.framework */,
+				5DD7E61516FB65E70025E88D /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		5DD7E61616FB65E70025E88D /* DocoptTests */ = {
+			isa = PBXGroup;
+			children = (
+				5DD7E61C16FB65E70025E88D /* DocoptTests.h */,
+				5DD7E61D16FB65E70025E88D /* DocoptTests.m */,
+				5DD7E61716FB65E70025E88D /* Supporting Files */,
+			);
+			path = DocoptTests;
+			sourceTree = "<group>";
+		};
+		5DD7E61716FB65E70025E88D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5DD7E61816FB65E70025E88D /* DocoptTests-Info.plist */,
+				5DD7E61916FB65E70025E88D /* InfoPlist.strings */,
+				5DD7E61F16FB65E70025E88D /* DocoptTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -106,6 +165,24 @@
 			productReference = 188A872ECB2980CD87AD8A1E /* docopt */;
 			productType = "com.apple.product-type.tool";
 		};
+		5DD7E60C16FB65E70025E88D /* DocoptTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DD7E62216FB65E70025E88D /* Build configuration list for PBXNativeTarget "DocoptTests" */;
+			buildPhases = (
+				5DD7E60816FB65E70025E88D /* Sources */,
+				5DD7E60916FB65E70025E88D /* Frameworks */,
+				5DD7E60A16FB65E70025E88D /* Resources */,
+				5DD7E60B16FB65E70025E88D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DocoptTests;
+			productName = DocoptTests;
+			productReference = 5DD7E60D16FB65E70025E88D /* DocoptTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -124,9 +201,37 @@
 			projectRoot = "";
 			targets = (
 				188A82BD85A01E95A51DEC57 /* docopt */,
+				5DD7E60C16FB65E70025E88D /* DocoptTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5DD7E60A16FB65E70025E88D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DD7E61B16FB65E70025E88D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5DD7E60B16FB65E70025E88D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		188A89C57F16307DF6345E01 /* Sources */ = {
@@ -137,7 +242,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5DD7E60816FB65E70025E88D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DD7E61E16FB65E70025E88D /* DocoptTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5DD7E61916FB65E70025E88D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DD7E61A16FB65E70025E88D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		188A88D48DC247DC3EA9C011 /* Release */ = {
@@ -217,6 +341,32 @@
 			};
 			name = Debug;
 		};
+		5DD7E62016FB65E70025E88D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DocoptTests/DocoptTests-Prefix.pch";
+				INFOPLIST_FILE = "DocoptTests/DocoptTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		5DD7E62116FB65E70025E88D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DocoptTests/DocoptTests-Prefix.pch";
+				INFOPLIST_FILE = "DocoptTests/DocoptTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -227,6 +377,7 @@
 				188A89099826F8610FFC3EF1 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		188A8F85A7DBA630B3894ECA /* Build configuration list for PBXProject "docopt" */ = {
 			isa = XCConfigurationList;
@@ -236,6 +387,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		5DD7E62216FB65E70025E88D /* Build configuration list for PBXNativeTarget "DocoptTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DD7E62016FB65E70025E88D /* Release */,
+				5DD7E62116FB65E70025E88D /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
