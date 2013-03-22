@@ -12,7 +12,9 @@
 		5DD7E60F16FB65E70025E88D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD7E60E16FB65E70025E88D /* SenTestingKit.framework */; };
 		5DD7E61116FB65E70025E88D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD7E61016FB65E70025E88D /* Cocoa.framework */; };
 		5DD7E61B16FB65E70025E88D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5DD7E61916FB65E70025E88D /* InfoPlist.strings */; };
-		5DD7E61E16FB65E70025E88D /* DocoptTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD7E61D16FB65E70025E88D /* DocoptTests.m */; };
+		5DD7E62516FB665A0025E88D /* DocoptTestCasesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD7E62416FB665A0025E88D /* DocoptTestCasesTests.m */; };
+		5DD7E62816FB6C230025E88D /* DocoptTestCaseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD7E62716FB6C230025E88D /* DocoptTestCaseParser.m */; };
+		5DD7E67116FCA3910025E88D /* DocoptTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD7E67016FCA3910025E88D /* DocoptTestCase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,9 +43,13 @@
 		5DD7E61516FB65E70025E88D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5DD7E61816FB65E70025E88D /* DocoptTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DocoptTests-Info.plist"; sourceTree = "<group>"; };
 		5DD7E61A16FB65E70025E88D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5DD7E61C16FB65E70025E88D /* DocoptTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocoptTests.h; sourceTree = "<group>"; };
-		5DD7E61D16FB65E70025E88D /* DocoptTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocoptTests.m; sourceTree = "<group>"; };
 		5DD7E61F16FB65E70025E88D /* DocoptTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DocoptTests-Prefix.pch"; sourceTree = "<group>"; };
+		5DD7E62316FB665A0025E88D /* DocoptTestCasesTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocoptTestCasesTests.h; sourceTree = "<group>"; };
+		5DD7E62416FB665A0025E88D /* DocoptTestCasesTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocoptTestCasesTests.m; sourceTree = "<group>"; };
+		5DD7E62616FB6C230025E88D /* DocoptTestCaseParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocoptTestCaseParser.h; sourceTree = "<group>"; };
+		5DD7E62716FB6C230025E88D /* DocoptTestCaseParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocoptTestCaseParser.m; sourceTree = "<group>"; };
+		5DD7E66F16FCA3910025E88D /* DocoptTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocoptTestCase.h; sourceTree = "<group>"; };
+		5DD7E67016FCA3910025E88D /* DocoptTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocoptTestCase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				188A870C9BA43CD2D2CD49B9 /* main.m */,
-				188A8B744A431F0B485DDC66 /* Supporting Files */,
 				188A88CB47029D582FFDE897 /* docopt.1 */,
+				188A8B744A431F0B485DDC66 /* Supporting Files */,
 			);
 			path = docopt;
 			sourceTree = "<group>";
@@ -91,10 +97,10 @@
 		188A83272E0253B219D8C9B0 = {
 			isa = PBXGroup;
 			children = (
+				188A82079A89CB9D0BDECD4A /* docopt */,
 				5DD7E61616FB65E70025E88D /* DocoptTests */,
 				188A87F0B30A93562362143C /* Products */,
 				188A82ACB5DAB0897D952DFB /* Frameworks */,
-				188A82079A89CB9D0BDECD4A /* docopt */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,8 +134,12 @@
 		5DD7E61616FB65E70025E88D /* DocoptTests */ = {
 			isa = PBXGroup;
 			children = (
-				5DD7E61C16FB65E70025E88D /* DocoptTests.h */,
-				5DD7E61D16FB65E70025E88D /* DocoptTests.m */,
+				5DD7E62316FB665A0025E88D /* DocoptTestCasesTests.h */,
+				5DD7E62416FB665A0025E88D /* DocoptTestCasesTests.m */,
+				5DD7E62616FB6C230025E88D /* DocoptTestCaseParser.h */,
+				5DD7E62716FB6C230025E88D /* DocoptTestCaseParser.m */,
+				5DD7E66F16FCA3910025E88D /* DocoptTestCase.h */,
+				5DD7E67016FCA3910025E88D /* DocoptTestCase.m */,
 				5DD7E61716FB65E70025E88D /* Supporting Files */,
 			);
 			path = DocoptTests;
@@ -246,7 +256,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DD7E61E16FB65E70025E88D /* DocoptTests.m in Sources */,
+				5DD7E62516FB665A0025E88D /* DocoptTestCasesTests.m in Sources */,
+				5DD7E62816FB6C230025E88D /* DocoptTestCaseParser.m in Sources */,
+				5DD7E67116FCA3910025E88D /* DocoptTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
