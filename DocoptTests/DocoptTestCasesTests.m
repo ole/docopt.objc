@@ -8,6 +8,7 @@
 
 #import "DocoptTestCasesTests.h"
 #import "DocoptTestCaseParser.h"
+#import "Docopt.h"
 
 @interface DocoptTestCasesTests()
 
@@ -28,8 +29,13 @@
 
 - (void)testTestCases
 {
-    NSString *testCases = [NSString stringWithContentsOfFile:@"/Users/elo/code/docopt/testcases.docopt" encoding:NSUTF8StringEncoding error:NULL];
-    self.parser = [[DocoptTestCaseParser alloc] initWithString:testCases];
+    NSString *rawTestCases = [NSString stringWithContentsOfFile:@"/Users/elo/code/docopt/testcases.docopt" encoding:NSUTF8StringEncoding error:NULL];
+    self.parser = [[DocoptTestCaseParser alloc] initWithString:rawTestCases];
+    
+    for (DocoptTestCase *testCase in self.parser.testCases) {
+        Docopt *docopt = [[Docopt alloc] initWithUsageDocumentation:testCase.usageDocumentation arguments:testCase.arguments];
+        STAssertEqualObjects(docopt.result, testCase.expectedOutput, @"Test %@ failed", testCase.name);
+    }
 }
 
 @end

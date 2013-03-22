@@ -15,6 +15,8 @@
 		5DD7E62516FB665A0025E88D /* DocoptTestCasesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD7E62416FB665A0025E88D /* DocoptTestCasesTests.m */; };
 		5DD7E62816FB6C230025E88D /* DocoptTestCaseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD7E62716FB6C230025E88D /* DocoptTestCaseParser.m */; };
 		5DD7E67116FCA3910025E88D /* DocoptTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD7E67016FCA3910025E88D /* DocoptTestCase.m */; };
+		5DD7E67416FCB5B70025E88D /* Docopt.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD7E67316FCB5B70025E88D /* Docopt.m */; };
+		5DD7E67516FCB80F0025E88D /* Docopt.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD7E67316FCB5B70025E88D /* Docopt.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,6 +52,8 @@
 		5DD7E62716FB6C230025E88D /* DocoptTestCaseParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocoptTestCaseParser.m; sourceTree = "<group>"; };
 		5DD7E66F16FCA3910025E88D /* DocoptTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocoptTestCase.h; sourceTree = "<group>"; };
 		5DD7E67016FCA3910025E88D /* DocoptTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocoptTestCase.m; sourceTree = "<group>"; };
+		5DD7E67216FCB5B70025E88D /* Docopt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Docopt.h; sourceTree = "<group>"; };
+		5DD7E67316FCB5B70025E88D /* Docopt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Docopt.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 			children = (
 				188A870C9BA43CD2D2CD49B9 /* main.m */,
 				188A88CB47029D582FFDE897 /* docopt.1 */,
+				5DD7E67216FCB5B70025E88D /* Docopt.h */,
+				5DD7E67316FCB5B70025E88D /* Docopt.m */,
 				188A8B744A431F0B485DDC66 /* Supporting Files */,
 			);
 			path = docopt;
@@ -249,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				188A8C6CCAB8F4094C275428 /* main.m in Sources */,
+				5DD7E67416FCB5B70025E88D /* Docopt.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +266,7 @@
 				5DD7E62516FB665A0025E88D /* DocoptTestCasesTests.m in Sources */,
 				5DD7E62816FB6C230025E88D /* DocoptTestCaseParser.m in Sources */,
 				5DD7E67116FCA3910025E88D /* DocoptTestCase.m in Sources */,
+				5DD7E67516FCB80F0025E88D /* Docopt.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

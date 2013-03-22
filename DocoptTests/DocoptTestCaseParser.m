@@ -7,7 +7,6 @@
 //
 
 #import "DocoptTestCaseParser.h"
-#import "DocoptTestCase.h"
 
 @interface DocoptTestCaseParser ()
 
@@ -34,8 +33,6 @@
     NSString *fixturesWithCommentsStripped = [self stringByRemovingCommentsFromString:stringOfTestCases];
     NSArray *fixtures = [self fixturesFromStringOfFixtures:fixturesWithCommentsStripped];
     NSArray *testCases = [self testCasesFromArrayOfFixtureStrings:fixtures];
-    
-    NSLog(@"%@", testCases);
     
     return testCases;
 }

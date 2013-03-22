@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DocoptTestCase.h"
 
 @interface DocoptTestCaseParser : NSObject
 
