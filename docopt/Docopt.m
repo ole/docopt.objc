@@ -31,7 +31,7 @@
 
 - (void)parse
 {
-    
+    self.result = @"user-error";
 }
 
 @end
