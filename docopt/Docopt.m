@@ -29,6 +29,13 @@
     return self;
 }
 
+
+/*
+ *  This method should parse the usage string in self.usageDocumentation and the
+ *  command line arguments passed in self.arguments and write an NSDictionary into
+ *  self.result that lists the arguments and their values according to the docopt
+ *  implementation at http://docopt.org.
+ */
 - (void)parse
 {
     self.result = @"user-error";
